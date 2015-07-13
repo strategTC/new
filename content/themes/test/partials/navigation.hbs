@@ -1,0 +1,17 @@
+<div class="navbar navbar-default navbar-static-top" style="background:#FFF;">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+				<span class="sr-only">Open nav</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<a class="navbar-brand" style="color:#000;" href="{{url absolute="true"}}">Test</a>
+		<div class="collapse navbar-collapse" id="responsive-menu">
+			<ul class="nav navbar-nav navbar-right">
+				{{#foreach navigation}}
+					<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a style="color:#000;" href="{{url absolute="true"}}">{{label}}</a></li>
+				{{/foreach}}
+		</div>
+	</div>
